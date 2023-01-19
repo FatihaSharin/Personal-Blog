@@ -1,216 +1,232 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
+  <title>Personal Blog</title>
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
     integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 
 <body>
-<div id="header">
-  <div class="container">
-    <nav>
-      <div class="logo">
-        <h2>Sharin</h2>
-      </div>
-      <ul type="none">
+  <header id="header-resume">
+
+    <nav id="header-nav">
+      <ul type="none" class="text-center nav-menu">
         <li><a href="#">Home</a></li>
-        
-        <li><a href="#about">About</a></li>
-        
-        <li><a href="#service">Services</a></li>
-        
+        <li><a href="#about-section">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#favourites">Favourites</a></li>
+        <li><a href="#education">Education</a></li>
         <li><a href="#portfolio">Portfolio</a></li>
-        
-        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-    <div class="header-text">
-      <p>HTML, CSS</p>
-      <p>Python, C, C++</p>
-      <h2>Hi! I'm</h2>
-      <h1><span>Fatiha Sharin</span></h1>
-      <h3>From Bangladesh</h3>
-    </div>
-  </div>
-</div>
 
 
-<!-- ------------- About -------------- -->
-  
-<div id="about">
-  <div class="container">
-    <div class="row">
-      <div class="about-col-1">
-        <img src="https://scontent.fdac7-1.fna.fbcdn.net/v/t1.15752-9/324478334_1227920428074762_4881368248928665554_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=ae9488&_nc_ohc=LpMUtg_APKkAX8v3sT4&tn=xvHGuk3xURXJ8Bc9&_nc_ht=scontent.fdac7-1.fna&oh=03_AdSPoe0qrmJyB5CHjQJtBV6R1RKwwqIo5nWNCCVNOsLvLw&oe=63E78219">
-      </div>
-      <div class="about-col-2">
-        <h1 class="sub-title">About me</h1>
-        <p class="about-info">Hi there! My name is Fatiha Sharin and I am a programmer with experience in a variety of languages, including  <a href="https://en.wikipedia.org/wiki/Python_(programming_language)">Python</a>, <a href="https://en.wikipedia.org/wiki/C_(programming_language)">C</a>, <a href="https://en.wikipedia.org/wiki/C%2B%2B">C++</a>, <a href="https://en.wikipedia.org/wiki/HTML">HTML</a>, <a href="https://en.wikipedia.org/wiki/CSS">CSS</a>, <a href="https://en.wikipedia.org/wiki/JavaScript">JavaScript</a>, <a href="https://en.wikipedia.org/wiki/Java">Java</a>.  I have a strong foundation in computer science principles and am comfortable working on both front-end and back-end development projects.<br>
-
-In my practise roles, I have had the opportunity to work on a wide range of projects, including building websites and developing software applications. I am constantly learning and looking for ways to improve my skills, and I am excited to bring my passion and expertise to new challenges.
-<br>
-When I'm not coding, you can find me learning languages! </p>
-        <div class="tab-titles">
-          <p class="tab-links active-link">Skills</p>
-        </div>
-        <div class="tab-contents">
-          <ul>
-            <li>
-              <span>Python, C, C++</span><br>Programming languages
-            </li>
-            <li>
-              <span>HTML, CSS</span><br>Front-end Web development
-            </li>
-            <li>
-              <span>Django</span><br>Frameworks
-            </li>
-            <li>
-              <span>SQL, MySQL</span><br>Databases
-            </li>
-          </ul>
-        </div>
+    <div id="name-container">
+      <div id="myName" class="text-center">
+        <h2>Little Rockster</h2>
       </div>
     </div>
-  </div>
-</div>
 
+  </header>
 
-<!-- ---------------- Service ------------------- -->
-
-<div id="service">
-  <div class="container">
-    <h1 class="sub-title">My Services</h1>
-    <div class="service-list">
-      <div>
-        <h2>Web Design</h2>
-        <p>I am proficient in HTML and CSS, the fundamental building blocks of the web. I have a strong understanding of web standards and best practices, and I use these skills to create clean, well-structured, and responsive websites.
-<br>
-I am experienced in using HTML to structure and organize content, and I have a deep understanding of the various elements and attributes that are available. I am also skilled in using CSS to style and layout web pages, including using advanced techniques such as flexbox and grid.
-<br>
-I have experience working with a variety of front-end frameworks and libraries, and I am comfortable working with preprocessors such as Sass. I am also familiar with accessibility standards and the importance of creating websites that are accessible to all users.</p>
+  <main>
+    <section id="about-section">
+      <div id="myPhoto" class="text-center">
+        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMTEhUTExMVFRUVGBcXFRYVFxcXFRcVFRUWGBgVFxUYHSggGBolHRUVIjEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGxAQGy0lHyUtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAOEA4QMBIgACEQEDEQH/xAAcAAACAgMBAQAAAAAAAAAAAAAFBgMEAAIHAQj/xABEEAABAwIEAwUECAUBBgcAAAABAgMRAAQFEiExBkFREyJhcYEykaGxBxRCUnLB0fAjM2KCkvEVJDSisuEWF0NTc7PC/8QAGgEAAgMBAQAAAAAAAAAAAAAAAwQBAgUABv/EADcRAAEEAQICCAUCBQUBAAAAAAEAAgMRIRIxBEETUWFxgZGxwSIyodHwFOEFM1KywjRCYnLxI//aAAwDAQACEQMRAD8AWXGQo1G/aRqK0ZuAedGrVnMOtZLnGPfZWrXshNuI3ozb3Fav2MCaDXL6kmBQsTnCJ/LGU02rmberpbHSlrC7gyJo4m6ApCeNzXUERrgQonbQE1qi0AO1WA4Sa8dXVNTtrVgAqdykAUGdeM1fvHDrFDGklSq0IGULKHIVctkqqyhZBg1esrWp3LKTVTICihhrCJcO3HWnezdEVz20RkVpTRhl2edVik0ORCLFJmBr1KaptXFW21VotIKCRSlAqvcVYJodfPQKmVwa21DRZQjE3aFFytcSekmhynCa89KTISU6BhTquBMVs24KGvTvWjbxofQmsKLIRVRFD7tfKqzt0ojSqy7g0aOBw3VSV6lkTNELdIoe2SauoSaK8nrUA0suE61idK1cGtQuqIqu4AU2rUisob2tZVuiKrqSrZtyacsKUkJpTYTVxF9lECtTiWGTCzGO0pmu1ggxS+6zrVZOInrWpvDQouHczCuXalca7tbuXcc6pG4mqdw4aKIdRyp1UMJjt78VZN0FDSlNi4Iqf64etCfwYvCt0mEWcTJ1NWLG1EzQJu8POjOFXgNUmY9rVaOiUxW7cVOmKit3tK07Wstr3BOKwhYFbMXsGhTt1B8Kxt8E6U2wEiyuLgmi2xHXej9ncyKSbVpUzR21ucvOjxyaFDhaYnLiBS7iWIawKhv8WGwNAF3cqmgcTxDpMN2XNaGq8pOasU2NqhRc1G9eAa0h8R2RdYU3Yiq7ltoa0avwTUy7kGpGtpyuLrCpItoqJVnVntda37UUXW4Ie6hYttavKZAFQtuiamceEUJznEqQhl8qCIrRaCRUz6JNTsJ0o+sNaFJQj6sele0Y0r2r/qCq0lpVhpoKo3NgRRp27HuqvcXAIk707HJJaQLQgDjBFRBs1auHwT5Vq04DT4LgMoVhY0mo3E61OpwRVbPXNJUnZboRULhrxTtQldFa3moJW6JNGMKbIoZbETTJh6BlpfiX02keBmoqyLzKKxV7IqjepMwKbuEOGFFOd8IyGCArNm92lI9C0iwMppwygjNk64YQgqnpt6nlR3CuGXpGZBT1JiPfMGm5CEMAhtIbSk6xuesePL1qjfcTMtDVZUTsn2idep2E7UdsF4J8lHctWsCXMBSDH9Qn3VVu8IeTPdJHVOtWbTHA4Ac4RBEkxEqjupEbjTzomrG2kpKlrGhJzRyGhMTy5+AJ61Z3DscKyF1uC5ziTxSdZ0oYm7k11TEsMau0ZVlMkShaD3ojQ9FDX/SufY1wi+xK0kOtp9pSTBTG4Uk/lQRw4YM+anWq6bmRVC/uSBWMviKgvTpVI4gHZCg7Kqzeqmj1o+SKW20iaN2boAonEsFYCpG42ra5qu7dRzqS4uBFBLx6aDDFqOVd76CKIvavW78iaVmnaP4eJAqZ4Q0KrH2VM+/BqFeKxpWmJiBQLOZqYYGvFldJIWo9/tGsoPJrKv8Ap29Sp0jlVRdGsW6TUyLepVWo5a04XMCUQZajWocq5c2Z3qiU001zXDCqRSl7SvAo1qkVLl0qTQVlCTXrSZNeFNE8LtcxqJHhjbUtFmlGy1FMWFp0rUWAq7aNRoKzJp2vCdibpRrA8Nb1edjKiInafz5aUxYnjSWm5V1BJ6J5kDrB0qP6qkJabIEJ7yvxASSfLrSVx3fEuJSDqJgctZ1/fhV4G0QPNHfWm0Mx7iVx1ZQhUJJg+WYyB4bGhFw/Mqk/dRJnRPtK15nSq7LMkqMwOfM6cqqXayT6aCtFrQMBJucasora4mUqKkk6QZ2JI5DoPLkKy3xhaXGlTqFZj0OaQQfCFGgyVViV9atoCp0hTth/EK7dKFIUVNAlSd5QAdU+IEnToK6JgfECLhrtNBqUrmCNPHmmCk67A+Brh7DxjIdtvef0mmTgzEciFIMFK1pSZ5FSVJn4gUvLHQsJiN4caKMcc4Am3V2zUpbVukJkIV5zoD+tJL12etdbsHk3dkWnBKi2kE6zm7MEEeMyK42pHejXfnv60OEAkg8lScFtUrTKiTRBpCqtYTYAgTRxm0A9KV4jiGg0ArNhxkoC6hUUPW3TRfIABoEhIJqsMti1L2UqtuzM0cw8wKgbaEVGt/KDXSHpMKW01ZiFxM0PtEyqtXnJqxYRRQ3QxCPxOU3Y+FZV/SsoHSFG6NCbt4AaVXsLjXWqTzk1Nat9ae6MBhtZ4OUZWjMKCXrIBo2y53aE3wmg8OSHUpeh01I0Z0qMiiuFWeanpHhrbKhjNRpQM2pJo7hltEUVssOAGoqym0g1jzcXrwE62DSoHCIr3Dky634qHzrR9gzXtmkh1H4k/MaUu0YV0zYrfhE8yqYHgIKq5fjV6XLhe++UddNPfM09cV3SUCSJUkKKesqKQfgaXrPg64dyPtAKJ1IJjWd/zrTgIaS488DvR5WlwAHXnuVvDOGFONZjokbD7x5n8I2nnB5bq+LYUptcHqda7lhtiQ0lKk5YSBl3ilDi7AnM4U2gqEkKgbCBB+HxNFbI5uVXQx/wrmaLBRTmGomD4H9/OqrjUE+H+ldEs8CUAFZVJDg18FbkEc07+I1pEubZwuLypUU5jqASCMxEz0osc2onqQZoA0Csquk94VcwgqzAJ2kqPpsT61fwzh964MhBSNpI5AcqIqwg2+aRplgn1qJJ21pGSrRcO67OyZ+FbgDsgDos+5SQIHllCtOtIl+2n6w7l27Rcc/tHnRzhG/TKQd0rBQfPMPz+NL127/Fc0jvr06d40JrSHnu91E5Ba0piw5wACry7mlq0u6v/WQRWfLCdVqWSWtcVujFCWH43qS9cmhTjtPww/DSBM/4kwG/Tl0oTdXMmqSXTXqlTRI+HDChGQlSocojaKoSiiFq4KmVuF0bqKJTXtQ9sK8pPSm9QQNqrjahFUkKrZS60HNsrNV83UCokjNVErohhZk60N7NDSVIyV4bOimFDIanfQkJmhiriDS2oytpHA0GwnBq8EVYYdzUnsXhkCmWwVpWbNB0YTTZNSILTVMohQPQzUjjlT4dZqfWEJIGhJUdgBuTQmA7DmrEpUx99165WhKScpCe6CYR1MbDnJro+A4/YWzKGvrKHXANUs5n1EjcANBRMUExnh9xpKkMrbWboobUrUJCQFAqMTJhURUvCeBvMqvGyrO6h1CS4ZzKaLKFt947J7yvUHpW5G4Bu2Ry/PoofqcaugfZHrridyJatXSP605DHkqDVM8ZoQf94QtkdVtuZP8AOCn41SvOHLgypV2hB6dkFCOmZZ+QFV7LCnEyl51DqIXmOXKMsSQUgREeVV1u3J8OfoiBjaoDxr90buOMbAJ/4hkjoCCf8RrQn/xMp0f7qxKeS1pDaI/pzQVDyBpCRwqVYf8AXBnnvHLpGUKIB2mIpytsNzhtbbxQFIQUqAPskTEgjSDsCPWiTADbr5/g9Qqwhx+Ycrxn1+xV+3ur4fZtzH2Q4pPpBb/OquP8St5eyubJxGcGFBbKmyUjWFlaRPhv0FEbThvmLp9RmdYyeUKB09aqcSYGHVWjCzmDlxr+Fth5avQwB60Noo0cjsv3Kl5xYNEd3sAk7sCw208MimlqSRlKgoAgq1BGm3jSy+6SpSupJ95mumYfgaUXb7JR2tsMsIX3gFETCPuxHLkaBcfYWylKXmWQz3y04hPsE5cyVJHIwCD6VeKWPXXM/wDqpxEMpZq5D3wPBKjD1W+30oYipAqjujBKSa6lcUZFVVME7VshdFsMbB3obn9GLVmgPKFpsFRMVC60U709rtk5KUcVb1oXD8V0rqKJLAGtsKgK9S4RVlm20moLhuKaDgTSXogWt+2rKgy15XaQutag16BXqU1M3FXcaQyVWKauWSoNROppm4c4HvbpIWhsIbOy3TlSR1SIKiPGIqjviCkHKG3b+lD1LmuiK+iV/wC1dsp8kLV+Yqwz9FCE+3eEn+lmPm4aG1gYEQAuXPrJJkU12RhNZjHDKrRYSVBaVCULAiY3BTJgjTSeYr1lOgrN4t1mimoxQUzqtKs4bchJUlRhLiCgnpm2PvAqi+6AKHPXoB3paNhOyJq0EOHLPkuh2luEMtt5JWVaRsCFyD8jV7FULYuhdBClsuthq4CAVqQW1KU28EJ1UmFrSrKCfZOwNAeAcaS+fq6/bbGZszqUjSPGNPTyp7Dgjy0PmK1YGaQr8TN0x1c7JPil9/iSxjW7Y9XEg+qSZFAcRvTfA2lpOVzR58pKUpaPtJbzCVqIkSNAOZNM2L3KQdEpKzoCQJ99ZaWISmcxBMyoaHWrardTQo00y3eGFc/2e0lkMhIDaU5AnllAiKQ7btcOPYlC3rYklooILrYJ2gkZ0a8tROx0plurMnTtVZRuSrX/AC3rG7VoJgrzabqVmPxNQXuPKu9WaxoF2T4fgVZvilr2QzdKPQWzw/5lJCfjU+F2jrr6bp5BaQ2hSWGioKXLmXO47llIVCQkJBMAmTJge2N8Ukt6qSPZPh0PvoqzcgAk7AEnyGtS14KiSMhC7xKm35T7Lhgj+oTKq55x/fgqFuPsqLi/BShCU+YBJPmKeuJ8YQxbF0FJWrRoaZipQ+Q3PlXHbgKJKlElSiSSdyTqSaHHGNerxHip4iciPo6zsfAqolGtbFFb27JKqJu2sDamXyhppIMZqCh4dwZ26d7JoCYlSlGEoSPtKP5DU0/sfR08gGH2lHkIUAfM6x8aNcE4Am0tgT/NfyrcPMSJS3/aCfUmmUA5o9aq+nYIRWMoWuWYzZXFun+M2UjYKEKQf7k6eh1pYu05ta74hyUqCgCDIIUJBHiDypaxngO0uAS1Nu4eaNW58WzsPwkUFkIabYpeXVlcmbVAiql0JNGuIOGrmzVDqZbJhLqNW1eE/ZPgY8Joc6gRNE+U2h1qCo5Kyts1ZRLKFSqk1matK1UaPSHSdvoy4cTdvqceEssAFSTstZ9lB6p0JI8hzrtz1xA7vwpY4EwY2lg2giHHP4rnXMsCEnyTlHoatC6yrIVpIgTtof0J91KyTaTXWnIYbCuouSUknkTPpWOknIRzI9xqki+SUrCSDG8eI/7Vvf3wS2hYGaMpATqTtoBzoIeCMn8tNdGdVAflITxwiWAfuLB9FAg/GKS0OaUyce4grskJyFIdJ9r2gEEHUcpJHupYtkd2lOJom0MjNKhilyRS+9cGj2LtaUuuJ1gak7Aak+Q505wgboS012rGFYw7bupeaVC0zEiQQRBBHMEGumfRrxM5cm4bdVKwQ6mBAykBCgPIhP8AlS1gnACsqXr9Zt2j7LY/nuHkkJ+zPqfAU02WMMWmRLbaWW1OJQG0kSZIQVuualahI5nnTrodQsBVjkIPZz9k03Vole/vG9VLnh0Oa9s9+HOQPhrRHtMqoNXw4IpVjWkp3pnsrSUo3PDg21PX+IqPUc68tuDmArMqT4BSwPnTStafCoXLhI51OloRjxk5bVqsxbIaQcqQB0qheLCmnApRQlSSgqAzZc4ImOm9bX2IBWgNB8WxgIeYthAzJW6snUaEJTI5/b08KEDqdTVTZvxHfmkzHsEeYUkud9B/luAlSFD+knbyrRixCq6zZWzLrRZWM7Tmuo9lXhA7nUeNJuPcPrs1b5m1HuL/APyror58vCOIY5jdTNvRLNrUWu3S43hwCpqVwhJBIzAEEjqAZIr166FV3FZqTBeTblfAwF0XDOJm7ggyEATIUefj050XaxJBSpYUInKDI3nLXELxBTqCR5aUPRiDqNAskfdVqk+hp+Nr3CwQudKwVqBHdXvld4xa+UltXZwVAczAA6k9IoZguPlaAVmFHl+Qrlg4pXlKSg6iFQsgEdCCCfjR/hq9S8kqQAFI9pBMkdDpuDQZumYNZFeiZiPDv+AHPdn6rqIuEOIKHAFIWIUlQkKB3BFck474cVZLBRJYcJ7MndJ3Laj1HI8x5Gn/AAcqOqjPTSAPAUYxTDm7phbDo7qxoeaVD2Vp8QaNDLrGUtNGG7L57z1lO3/lRef+6z/zVlNampLS7qSQlrrTD9H+AfW71CVCWmodd6Qk91J/EqB5BVAlGTpXd+A+HhZ2oCh/Fdhbp5gx3Uf2g+8muJUNblG7lVLGKHMqKP3q9KX3lxmUdkgn3Caz+KN4WnwwrKQ8VuHDcrCFqShMIhJIBy7kgeJNFuHsYTbOZnAVDLCdZKfIGh0jVR3OvvoRiF1rQWW5wobITnkWb3/KRXH8aNy9nOiRohPQfqaZ+E+GDcN9qtWRuSBGqlRvHIDxpCwjB7m6UOwaWsT7UQgeazpXYOH8MctLYMqdCyo5gQCAmYlI6iZM6U03hg5wL8hB6Q1jdRq4WtDopiUgaEqOZUeSq3tHbW3zJt7dCSAVKISAREDVR/cA0RKJ5686XcTxcNXIZXADySEaDVQ2CjvB2nyrSjjZs0eyXe527vz85IFxFjXaqWpUkJAToIUcxkd3dCNvFVcyxm4UpRSVhUaSnQQDp5eVPV5g715mKlRorKEjKkq1IBJGZYHkka7VBbcKMv8A1RIGQK7UORooqA5nfRQowOkEN579vd1DxrsUucZALAABxXK+s88c910TD3u3t2XebjaF+qkgmonVOJ2miuHWvZNpbiAkBIHKBpp4VI40DWQ5l9i0GvA7UpP3bg+0arLuVq0kmme4sgf9K8t7BI1igFjjhGEjQLQSxs1bq08KSeJEuHE8+mUBKUGRISlOsToDJVXV3GSdEiljirBUi3cI/nKiF7ZRmB0PITufCmeHje11hBmkY5tHwWmGY+EO9kSpaDHeVskmAESec+4lP3hVviPi5LbGV9pt1CkpzID6UPEEd5SWyD3gddxtXNuFMQzOoStQTl/lkEBQUogDskqjvmdpjlHI3mbAXz61KRAEJGplKU6JHiY1J5kmtJ0Oo/Dtz+3is4yjT8W+arq/bknTCOHLNLaH1BdylaQ4CuEoQ2oSCtAOp5bnWdKtuYbYOjOhpGQe0phSkqQfFGoI13jSrLGGZbdtpKiEITlIOxT12pQxK5aw90LQpxeaQlIJDc80mdyPGpZw0TmUBZ6uXidh5+aGZHh3xGm9fPwG58vLdVuKOGnWwpxoF5gfbR3igbw4kaiBz250jlua63w5jalXSW0ZQ0tCjEf4jMdACTA33rnmN4JcWy1F9hTaSowR3m9TokLGnh1pPQIzTeeU1Lq2duMbYQJxFTYTiCrd1LqeR1HJSTuk+dRvrmoaKBqbTkC6Nhd3wt5CkIcQZQsBSfWjbKq5n9GOK5m12yjqjvt/hJ7w9FEH+6uhWrtZrW9G4sK0y7pGB4RHtPGsqKa8pjUh0FyD6LMD+s3gWoS3bw4roVz/AA0+8FX9tdueXSh9FWG9jYJWR3n1Fw/h9lHpAn1ppeVRXFLRtQ6/XQPGDFs8f6Y95A/Oi17WltZN3TLqFrKUzlJETIhW59KRLS99BPWGxkrm9nh1w+D2LS1gaSB3QehUdPjRrhbg1aXlqvWYSgDIhRCkrUonU5SQQI28RR9OMs2qEMMEKSCsSVCZSe8VeM0v41xp306qhIGqNATz89j7q1eF/hzjRWTPxbWmt/3yulXd0G8qAAAREbAadKgbGdKSDsN/Wkri65cdNu4kwhQSoAnn7Wvwp7whI7FGxBE+/X86qHNDi3mEy+Jwja/k72UC2YlRMgDauacRZ13LTKz3nXUFJOpQc477ahtHQ11q6gJJikVvhwLvEPlUd+co5mIE+A8PjTUT2AEv/DySbw/UNHj3c77EYfdZRIGYQCSdKWuHk9y1KQVEqccJOhCVFWw8yKZMVwtfZrATplV7J8POp7DCw220AnLkSgRp93XUelBO+/17kyxx0kEDccuw/dFwQR1rRafCpUJ0rxTf7k1UtB3UXShLY/c14BFSpZ8/eazsv6R+fvNQGgclJcTzUE+vl+tLXH7ik2jhSdSIgCT3u7+c6dKbSAN/1pJ+lK4IslBG5UkFQ5CeVFZ8wVTVZXKOHrTO814LCj4IR3ifh8K65ZYclK8yBOYzAHM669aAcKWRXLCh3+yS6pI0GVWjTWmsZQFkHfOPGuiYK2koBACSNDV5ZBq0dXUd+tVZH8GsZ7xtYxz5laM2ZI72nhSXx1w8jsiUJJUlaTrrIOm505j3V0cJFL3F7gCEjcqI7oEkgETp0ioilLXYQ5Iw4Wd/qgWHXCGUMF5sEOdmjMNSghMz5SPhTTbOhaVBJS82ZBSYUI6ePlSgtxKrY5RJb1Tt7aZ0nbadutDeDi626pxKiJABH2SSdyOeg+NLCHXkb2fK1oufpab5AY7T6eFKxiH0dWval8vLYYBJWzHeB6NrOyT4gxQXGPo5dMu2Sg+0dUoKgHR4awlXwPhU1xx8tVwtLqQpnOpJyDvQDAO8KFMthiVk4B2b/ZkmACSg+5Qor+HlZtlKsfC75sG1z/hRh+1vmS6y62FK7JWdCkj+J3YkiN8p9K6+wINRs3q0OZFvJUjLIPPMSAmdwOZnwqKyezanfnHX9OdZs9ktcRVhPQtDQ5oN0is1lR1lRa6ldsrcNMttjZtCUj+1IFaPrgVK65QjFHiRlSJUdAB1q8jw0KsbNRQjFsRUpxDKBqs+1yABE1mNtXSWx2ECDokREazM71cyFLgygSEga9ZE/Ch91ek5pUQZMDp4zT3CsczIAvneb8BsluKfG4BpJquWPVc5ew+X3UOupQoKzxylZ70GesVdvLi2ZCEBPanmpUAR0+Jpe4hSpFwskkmdSdzOx9RVZboyg8+tabfivU4ms0MDPdnwtKdIGgGNgB2s/EfrjxpdUaf+vttBvZIQAnood0gxy/7V0m2YCEJQNkgAeQEVzX6KMPWlvtFKCQ6orSk+1kSMubwk/AV0nMvoDWdKW6yGjATLdZY3Ue3P52WocTEgD986BWCs10EgiG5URzEDT0orid0UkZkmOo5aHehXDSkKefUlQOiZ0jVRPXf2TVRR35C/EqKc1uBvz7B9zSNYg5LawOYyjzVoPiRXpfSkkTOu3kAPyrLiCpsdVT6JBPzAodhOHolTpSCVqUqY+8omqC7VqGkfn5sird0g86lDgNQm3T92tcmXar2VXCl7TwqNWc7ViHZqQKqVyr/VJMkz8qCcYYUHrZaJ2hQP4VBWw8qYyqg2LtrWnKDlB0JG/wAas00bCgixRS9gtuq2v3Vn2Xlqk8xk0Cfw5IjyPSjTuNs2/arWsBudCNdQSIEUMxWFulOveK/XRYEHzVS3xNg6nmGW7YBKEqCsyjkbOYad485zH+7rQGBmu3nGD5hMyB/RgMHWPLbCYL/jlYbDjbIKFAEFSgd+ZCdI9aiu8WDy0tP6BQzIWnbOkjQmND3tOsmoME4RWlsNPv8AahJMJbE6H7PaL0I30y0xnDkMtlSEBECM65KxsPaOo5aCKYkkgLS1o9fdKQxzteHuNVn8G6UbRSG3H0FYKQUqSVQASRBTB1B30qu/iKGWLhbRhXtbQkrUQnTnoTVF25a+srzFbyjI75gA5joOcDy51FcXCn2i0G0xIBAB010MjTeqQuDCWDlRHPFfsnZ4nytEh3Ngk4Fg9W+x7EoW6I8Tz9atWb5zARI3jnJ2A9YrR1lGoBKVicyVciN6m4dsyt1MqA1kTJ22PSPOn38WzRpbY8Dfl1pAcM8PDjR6siuzN9a6Dhtn2YS2VSZK3dz3oJgeAGgre0vUsIZUkk9qEgjWVdxPeHjWysNcDZS2QpagQDuBm3Uo1DcYY4u4ZQAcrSSqZ935Um90crNNozI5I5NbgeZ7/wAKZf8AaaOp9x/Ssrzsj4+8VlI9DD/Wfp9kfpZf6AiargHWdDUrRQnXn1riuF8SXFunIDnQNgrdPgD08Kur4/d2yfGltMt4bfbhEbLER81dmfZdDxa8Q0oLUYBB32ka+lBbZBWCUNLemVBcQknpJjaktPFiFLK3rYO6QnMrQHrG1Wh9IbyE5Wmm09CZMelaDJpQPl+qUlZGT830Ra64PeuFFTyW2ZTE5sx5x3UjX1NL54GWHEtdu3qqPtBUc4TGp9aqO8X3ijPbEc9AI+VaMY9cOPtFbpnOgTABgqA5Dxqelmu8KjWMHWu5YdhQQvumAhpDaRGgAFXvqyh099L2HrUkvLkgqcga8kpFEVX6wmc06HodqhsIrxRpJzfcB6Kpi7zgcRE5QFk8xsBrUWALQtLi1IAlcSjScqRqf8qB3PE603KG1AKBQSdClXsqOnLpTDht2wtltYUE5wFwSEkZtRI2mIq80TmDPZ7qsU7HgGq3zt1fdbPONdqAVL7ra1xyEkCT8fjRy3QAABtFL7TLTjjhSsKP8NqApJ0nOrQeBphSkRQoQRZPWizuB0gHYeufdbxXlZWtGS6woFYExtXsxXlcpXhFUL8hKZOgGpPgNTV9RoTizuVJJAIAVIPPunTaoJoWpa3UQEr4ZeF551LffKUFQAIjNMgkeB51dbQnsl9vBKSHUoTuM2nzzUI4dvwi4cyJIUqEpymRlyJUQBGmpV7qL4dhiu2dDhgOJWBrrqQRry0JpKUXprNtrs2+61oiIzIXGqdf/LBzXLbq+iYGcQlKSlIGYAjrqKx9lbqSFTEc/wBK1w6+ZQynL3svd08J5neq9/iSidFZRptEn1o7I3OAJKzpJGtcWtHPxSdjbVqxcpLigd5B1nRMd0anc8qA4rxW0lLjTLZgkxmhIE8wN9+WlVuKrEJcS4XJUVQoGB7BifcedAMWRDh8QDWk2JrJR3eiV6R0sBJ5OH1BWl2y68vtCgy4ATGsx3Srw1SacsGwVtAy9oqYSopgggc9woSeulKLS1lKYJEd3TTST086c+EbJKdTuefOsviuJfG46T2bIsbGOFEeN0pThq0ul5lbg0ATKoSTJHeEQdT86mwvELkOOKdEiQgrCkiBMSUxryGkU1uoSEcq53xNeBCiEnVW/wDpSX6mSV2kgE9dJuJ0UIJFjuPbaf8A6+jqK9rj315z76vea9qf00nWPJT+rj6j9Put11Wcbq8+zFaZKO143WbRuihqmqjKaKm3qJVprRmzBSFRbTRPhtsfW2M23aJ/7fGvGrWKjVKFBQ3SQR5gzUGW7pFZQIJXcbluAB1JP+RqC9dyNGTGh16ZtJ+NWU3GYIJA9lJ96Qap43cNBELTIJSmBPnOnlTcbjgaShyNFE6h42Ehrcz3oMyAmJHg2o0xlspQExokJHT2QB8hQXDrdty8dLSjEFIBmJ0RM+VE8VvSA4qDoFHY9NBR5pAXdVAb46/uhMhc2NoFG7OM9Q5dyufR+kKJc0kqcV5SuPyp6z0kfRzblLQzAg5ETy1USSPlTqPOlimLvK3URXhVUZitVL/YqFKnJrwq/YquFnpXvpXLlKpVCsTUPtHSFZp2jKaILIpe4rd/grEx3T4VB2VmD4ggCsetGTnbKO0ShRy6ypRKITMdJFaXWLuLfazgBJWmAPFRQSfQprnGIPgKUkbGJPPumdNfAe6nzHgMjRSSIkadTlUPlRZYgyMHqr2XQyGTiCD/ALtQ9Uz2KgS6iZEyAOQVJ/Sq13fpSkJ7xIJEIMnad+vhvrtQ6ybcVcPoBMQklQMBUhJEg/a1MmTMazvRpm1baA0zH4a/LyobXgCu9dIwlwccWBk9wXK8fWtxQCsxPaL3IgT8iY105VLe4etaG1EpAywZ3Gk/rU/Fb5UpxKEZQh0+yIA3HLrUP+zVrtEuEgBJiVnXc/rTr2yBzHYGe/ceSFA+HRI3JwTyHym+081WZaARAUFEHWOX7191Wk4opuI3qC1w2W1gKzOQlQSOk66+SifSqL7K0jvCKy+LgAmIcbvPmhtl1C24CPO8ROkRNL124papJk1u07UpbnWgRsbEcBcXE7qllrKu5fCsovSKLRm4bBFUslTLer1KdqRbYCYcQVqhmtlN5dautNjat3EiKH0uVZrUJ51GbYqmiAY1q2yyJSnqQPeYqXzUMLmts5XX2rUZU90eykfAUD4jtW+6FpMamROhiJ0/EabDQzE+ZmISa3I3FrkvIzU2lzjg9lAXcOtqOk7wRrP79K24qvXA0EhWq1oToBMTJ+VNOF2RW24BCSSJUBqRUF5w+pTrICwSFFZzAkGB56V3EOY95Lh2eyLw2uMNDScC/V3WiPDbudsqMbwIkaJAGx9aNA6dao4c1lRrGpJPPck1dTpVccl2ee68Jr1Br01qR51ylYYrwqjaskCvCJrlyjUY50v8VtlbZTvMz6a/lTCqelAeItG1HUwlZ8fYNcVZhAcCVxbErFeZZjSZnkJOmvqNq6DjSW0sNHNn9naPuGudYipSnViTrGmvhAiunu4alVnbqJkqDaoAjdvmdzVp7fDqcaFcleBzWcWA0X8R37zyGFPhKVuPukCBlaHQewnSmBmx1E97nHKvMHtAHXQf6NBp9mjqEgbCgxuAbjrPqontz7J5N/tCQeIuGVuF4lSUJMGIk/ZJ+XWtcPwFJYUgqKhMxoBOm0eXWnTEGwcw6p6a7EUv4edxMz++XnTMkzjFd7EHyKW4eJoloc7HmELwnDW21hCUJGYQTuTodzUWPcOZ0nLV6yUEuIBM95Qn5fPnRMX6CncVm/xQf/Rric16H91aCtJC5Jd4KpvetG0cqZuKMQRJAOtLDbmagxve9luVXAA0FLkrys1rKlRS8G9XW9xXtZVH7K4Vkb1u5WVlKIrdloN6sW/8xv8AEj/qFZWVDt1Ddyu1L3oRjXsufhPyrKyvQt+ZCfsq3D3sr/EPzq5/66PwH51lZQ5Nz3o7P8f8VIx7A8qkRWVlEVFsmvKysrly85VGvesrK5ctH/s+RoXjnsHyX/0KrysrlK5Pee1cfgT8k0/4b/wNr/8AGz/9YrKyr8X/AKVvcF3D/wCtd/2d6plw7+c7/b8qLCsrKVj28T6lEl+bwb/aFWvN/SljDdx+H86ysph38l3cgRfzmd6oOfzR+IfOhTXselZWVn/xbdncfZVi5pNxb+Ya8s6ysqR/LCq35lfrKysoCIv/2Q==" alt="My Photo">
       </div>
-      <div>
-        <h2>Imperative programming, object-oriented programming
-</h2>
+      <div id="about-profile" class="text-center">
         <p>
-
-I am proficient in several programming languages, including Python, C, and C++. I have experience working on a wide range of projects, including developing software applications, building data pipelines, and creating interactive data visualizations.
-<br>
-In Python, I am skilled in using popular libraries such as NumPy, Pandas, and Matplotlib to work with data, as well as frameworks like Django and Flask for web development.
-<br>
-I have a strong foundation in C and C++, and I have used these languages to develop low-level systems and high-performance applications. I am familiar with data structures and algorithms, and I am comfortable working with both imperative and object-oriented programming paradigms.</p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+          standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+          make a type specimen book. It has survived not only five centuries, but also the leap into electronic
+          typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
+          sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
+          PageMaker including versions of Lorem Ipsum.
+        </p>
       </div>
-      <div>
-        <h2>Database technologies: SQL, MySQL</h2>
-        <p>I am proficient in SQL and MySQL, two popular database technologies that are widely used in web development and data analysis. I have experience working with both of these systems in a variety of contexts, including building and querying databases and optimizing performance.
-<br>
-I am skilled in using SQL to create and modify tables, manage data, and execute complex queries. I am also familiar with advanced features such as stored procedures and triggers.
-<br>
-In MySQL, I have experience setting up and administering databases, configuring users and privileges, and optimizing queries for performance. I am comfortable working with both the command line and graphical tools, and I have experience using MySQL in conjunction with programming languages such as PHP and Python.</p>
+    </section>
+    <section id="skills">
+      <div class="section-heading text-center">
+        <span>
+          <i class="fas fa-chalkboard-teacher"></i>
+        </span>
+        <span>SKILLS</span>
       </div>
-    </div>
-  </div>
-</div>
+      
+      <div class="skills-display row">
+        <div class="skill-progress col-3">
+          <div class="fifty-percent blue skill-box">
+            <div class="skill-name">
+              <span> Painting </span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="skill-progress col-3">
+          <div class="eighty-five-percent orange skill-box">
+            <div class="skill-name">
+              <span> Basketball </span>
+            </div>
+          </div>
+        </div>
 
-<!---------------------- Portfolio --------------------- -->
 
-<div id="portfolio">
-  <div class="container">
-    <h1 class="sub-titles">My Works</h1>
-    <div class="work-list">
-      <div class="work">
-        <img src="Screenshot 2023-01-10 190445.png
-">
-        <div class="layer">
-          <h3>Survey Form</h3>
-          <p>This is a survey form. No JavaScript used</p>
-          <i class="fas fa-extarnal-link-alt"></i>
+        <div class="skill-progress col-3">
+          <div class="eighty-percent light-purple skill-box">
+            <div class="skill-name">
+              <span> Cricket </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-progress col-3">
+          <div class="fifty-percent teal skill-box">
+            <div class="skill-name">
+              <span> Drawing </span>
+            </div>
+          </div>
+        </div>
+        <div class="skill-progress col-3">
+          <div class="fifty-percent blue skill-box">
+            <div class="skill-name">
+              <span> Cooking </span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="skill-progress col-3">
+          <div class="eighty-percent light-purple skill-box">
+            <div class="skill-name">
+              <span> Playing an instrument </span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    
+    <section id="favourites">
+      <div class="section-heading text-center">
+        <span>
+          <i class="fas fa-th-list"></i>
+        </span>
+        <span>My favourites</span>
+      </div>
+
+      <div class="row text-center">
+        <div class="col-2">
+          <h3>My Favourite Sports</h3>
+          <h4>Football</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat.
+          </p>
+        </div>
+        <div class="col-2">
+          <img src="https://personal-blog-2.mariumazim.repl.co/images/football.jpg">
         </div>
       </div>
-      <div class="work">
-        <img src="Screenshot 2023-01-10 184411.png">
-        <div class="layer">
-          <h3>Personal Blog</h3>
-          <p>It's a simple Personal Blog project. Nothing is related to real people</p>
-          <i class="fas fa-extarnal-link-alt"></i>
+
+
+      <div class="row text-center">
+        <div class="col-2">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnU980kYxc1AOco1ZTEBo1jPgT81JJpqWRz2wCDmqqBrOsV0w_">
+        </div>
+        <div class="col-2">
+          <h3>My Favourite Book</h3>
+          <h4>Harry Potter and the Philosopher's/Sorcerer's stone</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat.
+          </p>
         </div>
       </div>
-      <div class="work">
-        <img src="Screenshot 2023-01-19 172114.png">
-        <div class="layer">
-          <h3>E-commerce Website</h3>
-          <p>This is a (fake) online shoping website</p>
-          <i class="fas fa-extarnal-link-alt"></i>
+    </section>
+    <section id="education">
+      <div class="section-heading text-center">
+        <span>
+          <i class="fas fa-th-list"></i>
+        </span>
+        <span>Education</span>
+      </div>
+      <div class="education-details text-center">
+        <img src="https://personal-blog-2.mariumazim.repl.co/images/education.jpg">
+        <h3>School Name</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat.
+        </p>
+      </div>
+    </section>
+    <section id="portfolio">
+      <div class="section-heading text-center">
+        <span>
+          <i class="fas fa-th-list"></i>
+        </span>
+        <span>Portfolio</span>
+      </div>
+      <div class="portfolio-display row">
+        <div class="portfolio-img col-3">
+          <img src="https://personal-blog-2.mariumazim.repl.co/images/portfolio1.jpg">
+          <div class="portfolio-text">
+            <p>Image 1</p>
+          </div>
+        </div>
+        <div class="portfolio-img col-3">
+          <img src="https://personal-blog-2.mariumazim.repl.co/images/portfolio2.jpg">
+          <div class="portfolio-text">
+            <p>Image 2</p>
+          </div>
+        </div>
+        <div class="portfolio-img col-3">
+          <img src="https://personal-blog-2.mariumazim.repl.co/images/portfolio3.jpg">
+          <div class="portfolio-text">
+            <p>Image 3</p>
+          </div>
+        </div>
+        <div class="portfolio-img col-3">
+          <img src="https://personal-blog-2.mariumazim.repl.co/images/portfolio4.jpg">
+          <div class="portfolio-text">
+            <p>Image 4</p>
+          </div>
+        </div>
+        <div class="portfolio-img col-3">
+          <img src="https://personal-blog-2.mariumazim.repl.co/images/portfolio5.jpg">
+          <div class="portfolio-text">
+            <p>Image 5</p>
+          </div>
+        </div>
+        <div class="portfolio-img col-3">
+          <img src="https://personal-blog-2.mariumazim.repl.co/images/portfolio6.jpg">
+          <div class="portfolio-text">
+            <p>Image 6</p>
+          </div>
         </div>
       </div>
-    </div>
-    <a href="https://github.com/FatihaSharin" class="btn">See more</a>
-    <p>This button will take you to my GitHub account.<br> You can see more projects that I've worked on. <br> I will keep updating my account with new projects.</p>
-  </div>
-</div>
-
-<!-- ------------------ Contact --------------------- -->
-
-<div id="contact">
-  <div class="container">
-    <div class="row">
-      <div class="contact-left">
-        <h1 class="sub-title">Contact me</h1>
-        <p><i class="fas fa-paper-plane"></i> mariumazim999@gmail.com</p>
-        <p><i class="fa-solid fa-circle-phone"></i>01706902061</p>
-        <div class="social-icons">
-          <a href="https://www.facebook.com/marium.arakhukhmoni"><i class="fab fa-facebook"></i></a>
-        </div>
-      </div>
-      <div class="contact-right">
-        <form name="submit-to-google-sheet">
-          <input type="text" name="name" placeholder="Your Name" required>
-          <input type="email" name="email" placeholder="Your Email" required>
-          <textarea name="message" rows="6" placeholder="Your message"></textarea>
-          <button type="submit" class="btn btn2">Submit</button>
-        </form>
-        <span id="msg"></span>
-      </div>
-    </div>
-  </div>
-  <div class="copyright">
-    <p>Copyright © Sharin.</p>
-  </div>
-</div>
-
-  
-  
-  <script src="script.js"></script>
 
 
-  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script> 
-
-
-
-<script>
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbwPhxikyXX9AA9hWR1YfnKhXNo0zvV6boY2Kv6kkIJmiP4JWIJ5lhuAr04wEnqKk73xNg/exec'
-  const form = document.forms['submit-to-google-sheet']
-  const msg = document.getElementById("msg")
-
-  form.addEventListener('submit', e => {
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => {
-        msg.innerHTML = "Message sent successfully!"
-        setTimeout(function(){
-          msg.innerHTML = ""
-        }, 5000)
-        form.reset()
-      })
-      .catch(error => console.error('Error!', error.message))
-  })
-</script>
-
+    </section>
+  </main>
 </body>
+
 </html>
